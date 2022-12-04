@@ -1,0 +1,111 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+.app{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        114.2deg,
+        rgba(121, 194, 243, 1) 22.6%,
+        rgba(255, 180, 239, 1) 67.7%
+      );
+}
+
+#open-modal-btn{
+    padding: 30px 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    &:hover{
+        opacity: 0.8;
+    }
+ 
+}
+
+
+.modal {
+    text-align: center;
+    width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -1000px);
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: rgb(177, 168, 168) 0px 18px 34px -1px;
+    transition: all 0.3s ease-in-out;
+  
+    @media (max-width: 815px) {
+      width: 600px;
+    }
+  
+    @media (max-width: 600px) {
+      width: 450px;
+    }
+    @media (max-width: 470px) {
+      width: 300px;
+    }
+  
+    &.show {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  
+  .modal-header {
+    padding: 50px 0;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    background: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgba(255, 247, 153, 1) 0%,
+      rgba(130, 205, 221, 1) 90%
+    );
+  
+    .modal-logo {
+      font-size: 10rem;
+    }
+  
+    .modal-close {
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      font-size: 30px;
+      cursor: pointer;
+    }
+  }
+  
+  .modal-body {
+    position: relative;
+    padding: 30px 0;
+    border-radius: 0 0 10px 10px;
+    background-color: rgb(105, 147, 179);
+    color: white;
+  }
+  
+  .close-modal-btn {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid #ee3a1a;
+    background-color: #ee3a1a;
+    box-shadow: rgb(177, 168, 168) 0px 18px 34px -1px;
+  
+    &:hover {
+      opacity: 0.8;
+    }
+  }
