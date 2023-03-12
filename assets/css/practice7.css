@@ -47,6 +47,9 @@
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+.modal-desc {
+  font-size: 30px;
+}
 @media (max-width: 815px) {
   .modal {
     width: 600px;

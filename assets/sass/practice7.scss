@@ -43,6 +43,10 @@
     visibility: hidden;
     box-shadow: rgb(177, 168, 168) 0px 18px 34px -1px;
     transition: all 0.3s ease-in-out;
+
+    &-desc{
+        font-size: 30px;
+    }
   
     @media (max-width: 815px) {
       width: 600px;
@@ -62,6 +66,7 @@
     }
   }
   
+
   .modal-header {
     padding: 50px 0;
     border-radius: 10px 10px 0 0;
