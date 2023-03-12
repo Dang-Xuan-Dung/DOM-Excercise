@@ -1,13 +1,11 @@
 const tagList = document.querySelector(".search-content");
 const inputText = document.querySelector("input");
-const removeAllBtn = document.querySelector(".removeAll-btn")
-
+const removeAllBtn = document.querySelector(".removeAll-btn");
 let tags = ["reactJs","MongoDB"];
 
 createTag();
 
 function createTag(){
-    console.log("12212")
     tagList.innerHTML = "";
     tags.forEach((tag, index )=> {
         let item = `<li>
@@ -29,7 +27,7 @@ function addTag(e){
             tags.push(contentTag);
             createTag();  
         }   
-        e.target.value = '';    
+        e.target.value = '';  
     }
 }
 

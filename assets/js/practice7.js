@@ -4,12 +4,6 @@ const closeModalBtn = $(".close-modal-btn");
 const modal = $(".modal");
 const modalClose = $(".modal-close");
 
-console.log(openModalBtn);
-
-
-
-
-
 openModalBtn.addEventListener("click", (e)=> {
 
     modal.classList.add("show");
