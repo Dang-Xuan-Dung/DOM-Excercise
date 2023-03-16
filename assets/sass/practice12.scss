@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(
+        64.3deg,
+        rgba(254, 122, 152, 0.81) 17.7%,
+        rgba(255, 206, 134, 1) 64.7%,
+        rgba(172, 253, 163, 0.64) 112.1%
+      );
+}
+
+li{
+    list-style: none;
+}
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    text-align: center;
+    color:  white;
+    background-color: #242628;
+    overflow: hidden;
+
+   
+}
+
+.card_image{
+    transform: translateY(20px);
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    transition: 0.25s;
+    cursor: pointer;
+    border-radius: 50%;
+overflow: hidden;
+    border: 3px solid rgb(236, 105, 127);
+
+
+    &:hover{
+        width: 100%;
+        height: 100%;
+        transform: unset;
+     
+        border: unset;
+        border-radius: unset;
+       
+        
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    
+    }
+}
+
+.name{
+    padding-top: 30px;
+}
+
+.job{
+    color: palevioletred;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.social{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-item  {
+   i {
+   color: white;
+   }
+}
+
+.contact{
+    margin: 40px 0;
+    background-color: transparent;
+    padding: 15px 25px;
+    border: 1px solid rgb(239, 111, 132);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s ease-in;
+
+    &:hover{
+        background-color: rgb(239, 111, 132);
+    }
+
+}
+
+
+
